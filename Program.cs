@@ -10,13 +10,17 @@ namespace KP_2
     {
         static void Main(string[] args)
         {
-            Decimal pi = 3.141592653m;
-            Decimal e = 2.7182818284590452m;
-            Console.WriteLine("П=" + pi);
-            Console.WriteLine("е=" + e);
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
+
+            string w = "\nмій рядок 1";
+            string o= "\tмій рядок 2";
+            string v = "\aмій рядок 3";
+
+            Console.WriteLine(w);
+            Console.WriteLine(o);
+            Console.WriteLine(v);
             Console.ReadKey();
-
         }
-
     }
 }
